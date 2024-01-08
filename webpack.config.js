@@ -5,14 +5,11 @@ module.exports = {
   mode: "development",
   entry: {
     index: "./src/index.js",
-    home: "./src/home.js",
-    menu: "./src/menu.js",
-    contacts: "./src/contacts.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
-    }),
+      template: 'src/index.html'
+    })
   ],
   output: {
     filename: "[name].[contenthash].js",
